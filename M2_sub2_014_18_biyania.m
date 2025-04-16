@@ -3,7 +3,7 @@ function [output] = M2_sub2_014_18_biyania(input)
 % ENGR 132 
 % Program Description 
 % This program takes a dataset and applies a moving average filter 
-% to reduce noise in the data without using convolution.
+% to reduce noise in the data
 %
 % Function Call
 % [output] = M2_sub2_014_18_biyania(input)
@@ -24,11 +24,12 @@ function [output] = M2_sub2_014_18_biyania(input)
 %     Peers we worked with: 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% ____________________
+%% initialize the window size and the number of rows and columns in the data
+% Create output variable filled with 0s so we can fill it with the result
 %% INITIALIZATION
 windowSize = 11;  % Changeable parameter
 [numRows, numCols] = size(input);
-output = zeros(numRows, numCols); % preallocate
+output = zeros(numRows, numCols); 
 
 %% ____________________
 %% CALCULATIONS
@@ -43,10 +44,10 @@ for col = 1:numCols
 end
 
 
-%% ____________________
+%% Not needed
 %% FORMATTED TEXT/FIGURE DISPLAYS
 
-%% ____________________
+%% No display needed
 %% RESULTS
 % Output is already computed and returned
 
