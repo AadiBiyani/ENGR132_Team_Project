@@ -1,4 +1,4 @@
-function [SSEcompact, SSEsedan, SSEsuv]=M3_benchmark_014_18( )
+function [SSEcompact, SSEsedan, SSEsuv]=M3_benchmark_014_18
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ENGR 132 
 % Program Description 
