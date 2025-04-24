@@ -37,7 +37,7 @@ function M3_main_014_18_wu2425()
 %% INITIALIZATION
 
 % Read raw data from csv file
-raw_data = readmatrix("Sp25_cruiseAuto_experimental_data.csv");
+raw_data = readmatrix("Sp25_cruiseAuto_M3benchmark_data.csv");
 
 % Assign Variables
 data_set = raw_data(:,2:end);
@@ -79,14 +79,13 @@ end
 %% ____________________
 %% FORMATTED TEXT/FIGURE DISPLAYS
 
+%% FORMATTED TEXT/FIGURE DISPLAYS
 figure(1)
 
 % subplot1:
-subplot(3,3,1)
+subplot(3,1,1)
 hold on
-for a = 1:(1+4)
-    h1 = plot(time, data_set(:, a), 'b-');
-end
+h1 = plot(time,data_set(:,1),'b-');
 
 plot(time,response_left,'r-');
 h2 = plot(time,response_right,'r-');
@@ -94,15 +93,13 @@ legend([h1 h2], {'dataset', 'boundary'}, 'Location', 'best')
 
 xlabel("Time[s]");
 ylabel("Speed[m/s]");
-title("ACC Performance of compact car with winter tire")
+title("ACC Performance of compact car")
 grid on
 
 %subplot2:
-subplot(3,3,2)
+subplot(3,1,2)
 hold on
-for a = 6:(6+4)
-    h1 = plot(time, data_set(:, a), 'b-');
-end
+h1 = plot(time,data_set(:,2),'b-');
 
 plot(time,response_left,'r-');
 h2 = plot(time,response_right,'r-');
@@ -110,15 +107,13 @@ legend([h1 h2], {'dataset', 'boundary'}, 'Location', 'best')
 
 xlabel("Time[s]");
 ylabel("Speed[m/s]");
-title("ACC Performance of compact car with allseason tire")
+title("ACC Performance of sedan car")
 grid on
 
 %subplot3:
-subplot(3,3,3)
+subplot(3,1,3)
 hold on
-for a = 11:(11+4)
-    h1 = plot(time, data_set(:, a), 'b-');
-end
+h1 = plot(time,data_set(:,3),'b-');
 
 plot(time,response_left,'r-');
 h2 = plot(time,response_right,'r-');
@@ -126,106 +121,10 @@ legend([h1 h2], {'dataset', 'boundary'}, 'Location', 'best')
 
 xlabel("Time[s]");
 ylabel("Speed[m/s]");
-title("ACC Performance of compact car with summer tire")
+title("ACC Performance of SUV car")
 grid on
 
-% subplot4:
-subplot(3,3,4)
-hold on
-for a = 16:(16+4)
-    h1 = plot(time, data_set(:, a), 'b-');
-end
-
-plot(time,response_left,'r-');
-h2 = plot(time,response_right,'r-');
-legend([h1 h2], {'dataset', 'boundary'}, 'Location', 'best')
-
-xlabel("Time[s]");
-ylabel("Speed[m/s]");
-title("ACC Performance of sedan car with winter tire")
-grid on
-
-%subplot5:
-subplot(3,3,5)
-hold on
-for a = 21:(21+4)
-    h1 = plot(time, data_set(:, a), 'b-');
-end
-
-plot(time,response_left,'r-');
-h2 = plot(time,response_right,'r-');
-legend([h1 h2], {'dataset', 'boundary'}, 'Location', 'best')
-
-xlabel("Time[s]");
-ylabel("Speed[m/s]");
-title("ACC Performance of sedan car with allseason tire")
-grid on
-
-%subplot6:
-subplot(3,3,6)
-hold on
-for a = 26:(26+4)
-    h1 = plot(time, data_set(:, a), 'b-');
-end
-
-plot(time,response_left,'r-');
-h2 = plot(time,response_right,'r-');
-legend([h1 h2], {'dataset', 'boundary'}, 'Location', 'best')
-
-xlabel("Time[s]");
-ylabel("Speed[m/s]");
-title("ACC Performance of sedan car with summer tire")
-grid on
-
-% subplot7:
-subplot(3,3,7)
-hold on
-for a = 31:(31+4)
-    h1 = plot(time, data_set(:, a), 'b-');
-end
-
-plot(time,response_left,'r-');
-h2 = plot(time,response_right,'r-');
-legend([h1 h2], {'dataset', 'boundary'}, 'Location', 'best')
-
-xlabel("Time[s]");
-ylabel("Speed[m/s]");
-title("ACC Performance of SUV car with winter tire")
-grid on
-
-%subplot8:
-subplot(3,3,8)
-hold on
-for a = 36:(36+4)
-        h1 = plot(time, data_set(:, a), 'b-');
-end
-
-plot(time,response_left,'r-');
-h2 = plot(time,response_right,'r-');
-legend([h1 h2], {'dataset', 'boundary'}, 'Location', 'best')
-
-xlabel("Time[s]");
-ylabel("Speed[m/s]");
-title("ACC Performance of SUV car with allseason tire")
-grid on
-
-%subplot9:
-subplot(3,3,9)
-hold on
-for a = 41:(41+4)
-    h1 = plot(time, data_set(:, a), 'b-');
-end
-
-plot(time,response_left,'r-');
-h2 = plot(time,response_right,'r-');
-legend([h1 h2], {'dataset', 'boundary'}, 'Location', 'best')
-
-xlabel("Time[s]");
-ylabel("Speed[m/s]");
-title("ACC Performance of SUV car with summer tire")
-grid on
-
-sgtitle("ACC Performance of All Types of Cars and Tires")
+sgtitle("ACC Performance of All Types of Cars")
 
 %% ____________________
 %% RESULTS
