@@ -37,19 +37,19 @@ sedan=benchmarkData(:,3);
 suv= benchmarkData(:,4);
 
 %The compact vehicles benchmark values
-compactTS=6.21;
+compactTS=5;
 compactT=1.51;
 compactYL=-0.09;
 compactYH=25.08;
 
 %The sedan vehicles benchmark values
-sedanTS=9.39;
+sedanTS=5;
 sedanT=1.96;
 sedanYL=-0.22;
 sedanYH=24.72;
 
 %The SUV vehicles benchmark values
-suvTS=6.85;
+suvTS=5;
 suvT=2.80;
 suvYL=0.19;
 suvYH=24.18;
@@ -148,6 +148,5 @@ sgtitle('Benchmark Speed of The Three Types of Cars Over Time')
 % source, either modified or unmodified. Neither have we provided
 % access to my code to another. The program we are submitting
 % is our own original work.
-
 
 
