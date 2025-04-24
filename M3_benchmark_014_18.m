@@ -1,4 +1,4 @@
-function [SSEcompact, SSEsedan, SSEsuv]=M3_benchmark_014_18(x)
+function [SSEcompact, SSEsedan, SSEsuv]=M3_benchmark_014_18()
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ENGR 132 
 % Program Description 
@@ -8,7 +8,7 @@ function [SSEcompact, SSEsedan, SSEsuv]=M3_benchmark_014_18(x)
 % the data vs model for each car.
 %
 % Function Call:
-% [SSEcompact, SSEsedan, SSEsuv]=M3_benchmark_014_18(x)
+% [SSEcompact, SSEsedan, SSEsuv]=M3_benchmark_014_18()
 %
 % Input Arguments
 %
