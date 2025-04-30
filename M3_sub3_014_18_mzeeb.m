@@ -43,7 +43,8 @@ halfWindow = 5;
 speed_Tc = initialSpeed + 0.632*(finalSpeed-initialSpeed);
 
 %Locare the index close to the target speed
-[~,lin_timeConst] = min(abs(speedVec(:))) - speed_Tc;
+[~, lin_timeConst] = min(abs(speedVec - speed_Tc)); 
+Time_Constant = timeVec(lin_timeConst);
 
 %Extract data containing the time constant
 Time_Constant = timeVec (lin_timeConst);
