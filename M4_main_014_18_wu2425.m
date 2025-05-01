@@ -52,9 +52,9 @@ data_set = M4_sub2_014_18_biyania(data_set); % call subfunction 1
 
 for a = 1:size(data_set, 2)
     % call subfunction 3
-    [initialSpeed(a), finalSpeed(a)] = M3_sub4_014_18_fagan13(time, data_set(:,a));
+    [initialSpeed(a), finalSpeed(a)] = M4_sub4_014_18_fagan13(time, data_set(:,a));
     % call subfunction 2
-    [Acc_Start_Time(a), Time_Constant(a)] = M3_sub3_014_18_mzeeb(time, data_set(:,a), initialSpeed(a), finalSpeed(a));
+    [Acc_Start_Time(a), Time_Constant(a)] = M4_sub3_014_18_mzeeb(time, data_set(:,a), initialSpeed(a), finalSpeed(a));
 end
 
 for a = 1:size(data_set, 2)
