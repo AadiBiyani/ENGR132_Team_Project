@@ -62,7 +62,7 @@ for row = 1:rows
     slope = lin_data(1);
     
     % Detect significant initial acceleration
-    if slope > 5 && stopvalue == 0
+    if slope > 0.5 && stopvalue == 0
         Acc_Start_Time = timeVec(row);
         stopvalue = 1;
     end
