@@ -59,8 +59,7 @@ end
 
 for a = 1:size(data_set, 2)
 
-    %start_time = Acc_Start_Time(a);
-    start_time = 5;
+    start_time = Acc_Start_Time(a);
     time_const = Time_Constant(a);
     initial_speed = initialSpeed(a);
     final_speed = finalSpeed(a);
